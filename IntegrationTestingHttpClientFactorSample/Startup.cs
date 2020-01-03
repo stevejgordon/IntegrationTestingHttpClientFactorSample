@@ -26,6 +26,7 @@ namespace IntegrationTestingHttpClientFactorSample
             services.AddControllers();
 
             services.AddHttpClient<IMyTypedClient, MyTypedClient>();
+            services.AddHttpClient<IMyTypedClientTwo, MyTypedClientTwo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
